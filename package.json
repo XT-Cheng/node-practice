@@ -1,5 +1,5 @@
 {
-  "name": "redux-practice",
+  "name": "node-practice",
   "version": "0.0.1",
   "author": "xt cheng",
   "homepage": "http://",
@@ -12,5 +12,5 @@
     "typescript": "2.6.1",
     "@types/node": "^8.0.58"
   },
-  "description": "Redux practice"
+  "description": "Node practice"
 }
