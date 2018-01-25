@@ -1,3 +1,3 @@
-import { Test } from './main.normalizr';
+import { Server } from './main.mongoose';
 
-let x = new Test();
+new Server();

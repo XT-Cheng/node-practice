@@ -1,6 +1,6 @@
-let Observable = require('./observable');
+let MyObservable = require('./observable');
 
-let o = new Observable((observer) => {
+let o = new MyObservable((observer) => {
         observer.next(1);
         observer.next(2);
         observer.next(3);

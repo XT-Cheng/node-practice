@@ -4,7 +4,7 @@
     "allowJs": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "lib": ["es2015"],
+    "lib": ["es2015","dom"],
     "mapRoot": "../dist",
     "module": "commonjs",
     "moduleResolution": "node",

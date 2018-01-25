@@ -1,10 +1,9 @@
-function Observable(subscriber) {
+function MyObservable(subscriber) {
     this.subscriber = subscriber;
 }
 
-Observable.prototype.subscribe = function(observer) {
+MyObservable.prototype.subscribe = function(observer) {
     this.subscriber(observer);
-    //observer(this.observer.next())
 }
 
-module.exports = Observable;
+module.exports = MyObservable;
