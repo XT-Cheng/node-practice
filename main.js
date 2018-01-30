@@ -1,1 +1,1 @@
-require('./main.promise');
+require('./main.immutable');
