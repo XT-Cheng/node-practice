@@ -1,1 +1,1 @@
-require('./main.immutable');
+require('./main.rxjs');

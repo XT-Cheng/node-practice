@@ -36,12 +36,32 @@ let obj = {
 
 let iObj = Immutable(obj);
 
-//Without test
-let newCities = Immutable.without(iObj.cities, '1');
+//Merge test
+let payload = {
+    cities: {
+        '1': {
+            id: '1',
+            name: 'city1'
+        }
+    },
+    viewPoints: {
 
-let ret = Immutable.set(iObj,'cities',newCities);
-
+    }
+}
+let ret = Immutable.merge(iObj,payload, { deep: true });
 console.log(ret == iObj);
 console.log(ret.cities == iObj.cities);
+console.log(ret.viewPoints == iObj.viewPoints);
+console.log(ret.cities['1'] == iObj.cities['1']);
 console.log(ret.cities['2'] == iObj.cities['2']);
 console.log(ret.cities['3'] == iObj.cities['3']);
+
+//Without test
+// let newCities = Immutable.without(iObj.cities, '1');
+
+// let ret = Immutable.set(iObj,'cities',newCities);
+
+// console.log(ret == iObj);
+// console.log(ret.cities == iObj.cities);
+// console.log(ret.cities['2'] == iObj.cities['2']);
+// console.log(ret.cities['3'] == iObj.cities['3']);
