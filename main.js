@@ -1,1 +1,1 @@
-require('./main.rxjs');
+require('./main.async');
